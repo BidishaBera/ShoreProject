@@ -1,0 +1,24 @@
+{
+  "name": "bulmatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "bulma-helpers": "^0.3.8",
+    "bulma-modal-fx": "^1.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "start": "node -e ejs,js,css,json app.js"
+  },
+  "author": "bidisha",
+  "license": "ISC"
+}

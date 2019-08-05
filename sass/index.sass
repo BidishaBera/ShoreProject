@@ -1,0 +1,780 @@
+.modal 
+  opacity: 0;
+  pointer-events: none;
+  display: unset !important
+
+
+.modal.is-active 
+  opacity: 1;
+  pointer-events: auto;
+  
+  .modal-card
+    transform: translateY(50%);
+
+.modal 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 10000;
+  -webkit-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+
+  .modal-card
+    transform: translateY(50%);
+
+hr
+  display: inline-block !important;
+
+@font-face
+  font-family: "AvenirNext-Regular"
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.eot")
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff"), 
+  url("../fonts/AvenirNext/AvenirNext-Regular.otf") format("opentype"),
+  url("../fonts/AvenirNext/AvenirNext-Regular.svg#filename") format("svg")
+
+@font-face
+  font-family: "AvenirNext-UltraLight"
+  src: url("../fonts/AvenirNext/AvenirNext-UltraLight.eot")
+  src: url("../fonts/AvenirNext/AvenirNext-UltraLight.woff") format("woff"), 
+  url("../fonts/AvenirNext/AvenirNext-UltraLight.otf") format("opentype"),
+  url("../fonts/AvenirNext/AvenirNext-UltraLight.svg#filename") format("svg")
+
+@font-face
+  font-family: "AvenirNext-Bold"
+  src: url("../fonts/AvenirNext/AvenirNext-Bold.eot")
+  src: url("../fonts/AvenirNext/AvenirNext-Bold.woff") format("woff"), 
+  url("../fonts/AvenirNext/AvenirNext-Bold.otf") format("opentype"),
+  url("../fonts/AvenirNext/AvenirNext-Bold.svg#filename") format("svg")
+@font-face
+  font-family: "AvenirNext-DemiBold"
+  src: url("../fonts/AvenirNext/AvenirNext-DemiBold.eot")
+  src: url("../fonts/AvenirNext/AvenirNext-DemiBold.woff") format("woff"), 
+  url("../fonts/AvenirNext/AvenirNext-DemiBold.otf") format("opentype"),
+  url("../fonts/AvenirNext/AvenirNext-DemiBold.svg#filename") format("svg")
+@font-face
+  font-family: "ZahrahforDouglas-Regular"
+  src: url("../fonts/ZahrahforDouglas/ZahrahforDouglas-Regular.eot")
+  src: url("../fonts/ZahrahforDouglas/ZahrahforDouglas-Regular.woff") format("woff"), 
+  url("../fonts/ZahrahforDouglas/ZahrahforDouglas-Regular.otf") format("opentype"),
+  url("../fonts/ZahrahforDouglas/ZahrahforDouglas-Regular.svg#filename") format("svg")
+@font-face
+  font-family: "ZahrahforDouglas-SemiboldIt"
+  src: url("../fonts/ZahrahforDouglas/ZahrahforDouglas-SemiboldIt.eot")
+  src: url("../fonts/ZahrahforDouglas/ZahrahforDouglas-SemiboldIt.woff") format("woff"), 
+  url("../fonts/ZahrahforDouglas/ZahrahforDouglas-SemiboldIt.otf") format("opentype"),
+  url("../fonts/ZahrahforDouglas/ZahrahforDouglas-SemiboldIt.svg#filename") format("svg")
+
+@media only screen and (min-width: 1035px)
+  .container
+      width: 1035px !important
+      margin: auto !important
+
+
+
+body
+  overflow-x: hidden;
+
+button
+  font-family: "AvenirNext-Bold" !important
+  font-size:  11px !important
+  border-radius: 0 !important
+  padding: 10px 42px 24px 42px !important
+  transition: all .5s;
+
+button:hover
+  transform: scale(1.2);
+
+.modal-card 
+  .delete:hover, .delete:focus
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(360deg) !important;
+
+hr
+  background: #97ddd2 !important
+  width: 22% !important
+  height: 7px !important
+
+/* css for header-section */
+.header-douglas-section
+  padding-bottom: 17px;
+  padding-top: 10px;
+  .logo-text
+    display: inline-block;
+    line-height: 1.1;
+    img
+      width: 46%;
+    p
+      float: none;
+      margin-top: 0;
+
+  p
+    float: right;
+    margin-top: 10px;
+    font-weight: bold;
+
+
+/* css for hero section */
+.hero-image
+  background: url(../images/hero_desktop.jpg)
+  background-size: 100% 100%;
+
+  .hero-text
+    width: 310px
+
+  h1
+    color: #fff
+    line-height: 1
+    font-family: "ZahrahforDouglas-Regular"
+    font-size: 3rem;
+  p,ul
+   color: #e7f5f5;
+   font-size: 13px;
+   font-family: "AvenirNext-Regular"; 
+
+.has-margin-left-170 
+  margin-left: 170px !important;
+
+.custom-list
+  list-style: none
+  padding-left: 0
+  li
+    position: relative
+    padding-left: 20px
+    &:before
+      content: ''
+      width: 10px
+      height: 10px
+      position: absolute
+      background-image: url('img/bullet.png')
+      background-size: cover
+      background-position: center
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+
+.hero-image-ul
+  list-style: none
+  padding-left: 0
+  li
+    position: relative
+    padding-left: 38px
+    &:before
+      content: ''
+      width: 28px
+      height: 10px
+      position: absolute
+      background-image: url(../icons/arrow_green.svg)
+      background-size: cover
+      background-position: center
+      left: 0
+      top: 27%
+      transform: translateY(-50%)
+
+@media only screen and (max-width: 1024px) 
+  .header-douglas-section 
+    padding: 23px 65px 17px 65px
+
+
+  .hero-image
+    background: url(../images/hero_tablet.jpg)
+    background-size: 100%
+
+    h1
+      font-size: 26px !important;
+
+    .hero-text 
+      width: 42% !important
+      padding-left: 65px !important
+
+  .platform-background
+    .platform-section 
+      background-color: #e6f6f5
+      bottom: 75px
+      padding: 39px 60px 24px 60px
+      margin: 0 auto
+      position: relative
+      z-index: 1
+      width: 85% !important
+
+      .platform-third
+        padding: 20px 55px;
+
+  .contact-form-section
+    .win-customer 
+      background-color: #e6f6f5;
+      display: block;
+      width: 95%
+      padding: 34px 50px 66px 30px;
+      margin: 0 auto;
+
+    .contact-form
+      right: 0
+      display: block;
+      width: 82%;
+      background-color: white;
+      z-index: 1;
+      position: relative;
+      bottom: 32px;
+      box-shadow: 0px 0px 13px -9px;
+      margin: 0 auto;
+
+      figure  
+        width: 100%
+
+  .time-table-section 
+    margin-top: -20% !important;
+
+    .time-section
+      .time-table-article
+        padding: 17px;
+        width: 50% !important
+        margin-right: 0 !important
+        display: inline-block;
+      
+      .time-table-image
+        width: 46% !important
+        display: inline-block
+
+      .time-table-article
+        .media
+          margin: 0
+          padding: 0
+
+  .footer-douglas 
+    .container 
+
+      a
+        margin: 23px 18px 23px 18px !important
+      a:nth-child(4)
+        margin-right: 23px !important
+        width: 10% !important
+
+        img
+         width: auto !important
+         display: inline-block;
+
+  .modal 
+    .modal-card 
+      width: 90% !important;
+
+      .positive-modal-content 
+        width: 48% !important;
+      section 
+        .modal-image 
+          width: 47% !important
+          float: left;
+        .negative-modal-content 
+          width: 50% !important
+          float: right;
+          line-height: 1.2;
+          padding-top: 17px !important;
+          padding-left: 12px;
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  .modal 
+    .modal-card 
+      section 
+        .negative-modal-content 
+          p:nth-child(1) 
+            font-size: 19px !important
+  
+
+@media only screen and (max-width: 767px)
+  .hero-image
+    background: url(../images/hero_mobile.jpg)
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: bottom;
+
+    p, ul 
+      color: #e7f5f5;
+      font-size: 10px;
+      font-family: "AvenirNext-Regular";
+      margin-bottom: 8px !important;
+  
+    .hero-text 
+      width: 100% !important;
+      padding-left: 16px !important;
+      margin-top: 11px !important;
+
+      hr
+        margin: 11px 0px !important;
+    h1 
+      font-size: 17px !important;
+
+  .platform-background 
+    .platform-section 
+      background-color: #e6f6f5;
+      bottom: 17px;
+      padding: 16px 23px 16px 23px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      width: 85% !important;
+
+      .platform-first
+        font-size: 14px !important;
+
+      .column
+        padding-left: 15px !important;
+      .platform-third
+        padding: 15px 15px !important
+
+  .postal-code 
+    .enter-postcode 
+      display: inline-block;
+      width: 86% !important;
+      background: #fff;
+      padding: 22px !important
+      border-bottom: 7px solid #97ddd2;
+
+    p
+      font-size: 17px !important
+
+  .time-table-section
+    margin-top: -56% !important
+    .time-section-heading 
+      background: #fff;
+      text-align: center;
+      width: 100% !important;
+      padding: 40px 0px 29px 0px;
+
+      h1,p 
+        font-family: "AvenirNext-Bold";
+        font-size: 14px !important
+    .time-section 
+      .time-table-article 
+        padding: 17px;
+        width: 100% !important;
+        margin-right: 0 !important;
+        display: inline-block;
+
+      .time-table-image 
+        width: 100% !important;
+        display: block;
+
+  .win-customer
+    h1
+      font-size: 14px;
+
+  .contact-form
+    .media
+      display:block !important
+    .media-content
+      width: 95% !important;
+      padding: 24px 0px 0px 17px !important
+
+  .footer-douglas 
+    .container
+      text-align: center !important
+      a:nth-child(4) 
+        margin: 0 auto !important;
+        width: 100% !important;
+        display: block;
+        text-align: center;
+        float: none !important;
+        padding-bottom: 14px;
+
+      a:nth-child(4) img 
+        width: 14% !important;
+        display: inline-block;
+        float: none !important;
+
+      a 
+        margin: 23px 3px 23px 3px !important;
+        font-size: 10px !important;
+
+  .delete::before, .modal-close::before
+    height: 2px;
+    width: 24% !important;
+
+  .delete::after, .modal-close::after 
+    height: 41% !important;
+    width: 2px;
+
+  .modal-card
+    button
+      font-family: "AvenirNext-Bold" !important;
+      font-size: 7px !important;
+      border-radius: 0 !important;
+      padding: 1px 16px !important
+
+    section 
+      .positive-modal-content
+        width: 44% !important
+        padding: 0px 7px 0px 0px !important
+        p:nth-child(1)
+          font-size: 16px !important
+        p:nth-child(2)
+          font-size: 11px !important
+          margin-bottom: 7px !important
+        p:nth-child(3)
+          font-size: 7px
+          margin-bottom: 7px !important
+
+      .modal-image 
+        width: 44% !important
+     
+
+      .negative-modal-content 
+        p:nth-child(1)
+          font-size: 11px !important
+          margin-bottom: 7px !important
+
+        p:nth-child(2) 
+          font-family: "AvenirNext-Regular";
+          font-size: 7px;
+          margin-bottom: 10px !important;
+
+        .button.is-black
+          font-size: 7px !important;
+          padding: 0 !important;
+          width: 100%;
+
+  .contact-form-section
+    .win-customer
+      background-color: #e6f6f5;
+      display: block !important;
+      width: 100% !important;
+      padding: 24px 35px 46px 35px !important;
+
+    .contact-form 
+      display: block !important;
+      width: 84% !important;
+      background-color: white;
+      z-index: 1;
+      position: relative;
+      bottom: 31px;
+      right: 0 !important;
+      box-shadow: 0px 0px 13px -9px;
+      margin: 0 auto;
+
+  .modal 
+    .modal-card 
+      width: 90% !important;
+      border-left: 6px solid #97ddd2;
+
+      section 
+        .negative-modal-content
+          width: 56%;
+          float: right;
+          line-height: 1.2;
+          padding-top: 0px !important;
+          padding-right: 20px;
+
+          .onceAgain
+            margin-top: 0px !important;
+            margin-bottom: 0px;
+            text-decoration: underline;
+            cursor: pointer;
+            display: block;
+            font-size: 10px !important;
+
+  .header-douglas-section 
+    .logo-text 
+      display: inline-block;
+      line-height: 1.1;
+      width: 50%;
+      .logo-text 
+        img 
+          width: 50%;
+        p 
+          float: none;
+          margin-top: 0;
+          font-size: 11px;
+    p 
+      float: right;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 11px;
+
+  .header-douglas-section 
+    padding: 11px 15px 15px 15px !important;
+
+
+.platform-background
+  background: #f7f7f7
+
+.platform-section
+  background-color: #e6f6f5
+  bottom: 75px
+  padding: 50px 45px 50px 45px
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  .media
+    border: none !important
+
+    p
+      font-family: "AvenirNext-Regular"
+
+/* css for postal-code enter form */
+.postal-code
+  background: url(../images/map.jpg)
+  text-align: center
+  background-size: cover
+  background-repeat: no-repeat
+  padding-top: 74px
+  position: relative
+  bottom: 44px
+  padding-bottom: 232px
+
+  .enter-postcode
+    display: inline-block;
+    width: 515px
+    background: #fff
+    padding: 50px
+    border-bottom: 7px solid #97ddd2
+
+  p
+    font-family: "ZahrahforDouglas-Regular"
+    font-size: 21px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+
+  .wrapper
+    display: inline-block;
+    border-bottom: 1px solid black;
+    width: 100%;
+
+    input:focus
+      outline: none;
+
+    input 
+      float:  left
+      font-family: "AvenirNext-Regular"
+      border: none;
+      display: inline-block;
+  
+  .button
+    float: right;
+    padding: 0 !important;
+
+  .button.is-white.is-hovered, .button.is-white:hover 
+    background-color: #f9f9f900;
+    border-color: transparent;
+    color: #0a0a0a;
+
+
+  .enter-postcode-underline
+    background-color: #0f0303;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 1.5rem 0;
+
+
+
+/* css for contact-form-section */
+.contact-form-section
+  position: relative;
+  bottom: 176px;
+
+.win-customer
+  background-color: #e6f6f5
+  display: inline-block;
+  width: 30%;
+  padding: 60px 65px 116px 60px;
+  
+  h1
+    font-family: "AvenirNext-DemiBold" 
+  
+  p
+    font-family: "AvenirNext-Regular"
+
+  .custom-hr
+    width: 60px !important
+
+.contact-form
+  display: inline-block;
+  width: 69%;
+  background-color: white
+  z-index: 1;
+  position: relative;
+  bottom: 138px;
+  right: 34px;
+  box-shadow: 0px 0px 13px -9px;
+
+  .media-content
+    width: 100%;
+    padding: 24px 0px 0px 46px;
+
+    .content
+      form
+        input
+          border-bottom: 1px black;
+          margin-bottom: 8px;
+          border-style: solid;
+          border-top: hidden;
+          border-left: hidden;
+          border-right: hidden;
+          padding-bottom: 10px;
+          font-family: "AvenirNext-Regular"
+          width: 100%;
+      label
+        font-family: "AvenirNext-Regular";
+        font-size: 10px;
+        color: #acacac;
+        line-height: 1.1;
+
+  article
+    figure
+      img 
+        display: flex;
+
+.has-width-312
+  width: 312px !important
+
+/* css of time table section */
+
+@media only screen and (min-width: 1025px)
+  .time-table-section
+    margin-top: -304px !important;
+
+
+.time-table-section
+  
+  .time-section-heading
+    background: #fff
+    text-align: center
+    width: 500px
+    padding: 40px 0px 29px 0px
+
+    h1  
+      font-family:  "AvenirNext-Bold"
+      font-size: 19px;
+
+    p
+      font-family: "ZahrahforDouglas-Regular";
+      font-size: 19px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+
+  .time-section
+    padding: 0px 60px
+
+    .time-table-article
+      padding: 17px
+      width: 29%
+      margin-right: 60px
+
+
+      .media
+        border: none !important
+
+        p
+          font-family: "AvenirNext-Regular"
+
+  
+    .time-table-image
+      width: 62%
+
+/* css for footer-section */
+.footer-douglas
+  background: #e6f6f5;
+
+.footer-douglas
+  margin: auto
+  
+
+  .container
+   
+    a
+     display: inline-block
+     margin: 45px 40px 45px 0px
+     font-family: "AvenirNext-Bold"
+     color: #333
+     font-size: 13px;
+
+    a:nth-child(4) 
+      margin-right: 0;
+      img
+        width: 25%;
+        float: right;
+
+/* css for modal */
+
+.modal
+
+  .modal-card
+    width: 60%;
+    border-left: 6px solid #97ddd2
+    section
+      padding: 0
+      overflow: hidden
+    
+      .modal-image
+        width: 40%
+        float: left
+
+        img 
+          display: flex;
+      
+      .delete-modal-button  
+        float: right
+
+        .delete
+          background-color: white
+        .delete::before
+          background-color: grey
+        .delete::after
+          background-color: grey
+        .delete::before, .modal-close::before
+          height: 2px;
+          width: 36%;
+
+        .delete::after, .modal-close::after 
+          height: 80%;
+          width: 2px;
+
+
+
+
+      .positive-modal-content
+        width: 51%;
+        float: right;
+        line-height: 1.2;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        p:nth-child(1)
+          font-family: "ZahrahforDouglas-SemiboldIt"
+
+        p:nth-child(2)
+          font-family: "ZahrahforDouglas-Regular"
+
+        p:nth-child(3)
+          font-family: "AvenirNext-Regular"
+
+      .negative-modal-content
+        width: 56%
+        float: right
+        line-height: 1.2;
+        padding-top: 8px;
+        padding-right: 20px;
+
+        p:nth-child(1)
+          font-family: "ZahrahforDouglas-Regular"
+          font-size: 31px;
+          line-height: 1.1;
+
+        p:nth-child(2)
+          font-family: "AvenirNext-Regular"
+
+        button
+         padding: 5px 30px 5px 30px 
+         font-family: "AvenirNext-DemiBold" 
+
+        .onceAgain
+            margin-top: 10px;
+            margin-bottom: 0px;
+            text-decoration: underline;
+            cursor: pointer;
+            display: block;
