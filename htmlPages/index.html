@@ -11,24 +11,25 @@
   <link rel="stylesheet" type="text/css" href="../css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
   <link rel="stylesheet" href="../css/bulma-helpers.css">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-  <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link rel="stylesheet" href="../css/animate.css" />
   <script src="../js/script.js"></script>
 </head>
 
 <body>
-    <section class="header-douglas-section">
-          <div class="container">
-            <div class="logo-text">
-            <img src="../images/logo_douglas_black.svg"/>
-            <p>BEAUTY BOOKING</p>
-            </div>
-            <p>+49 89 41614330</p>
-          </div>
-      </section>
-  <section>
+  <!-- header-douglas-section starts -->
+  <section class="header-douglas-section">
+    <div class="container">
+      <div class="logo-text">
+        <img src="../images/logo_douglas_black.svg" />
+        <p>BEAUTY BOOKING</p>
+      </div>
+      <p>+49 89 41614330</p>
+    </div>
+  </section>
+  <!-- header-douglas-section starts -->
+  <!-- home section starts -->
+  <section class="home-image-section">
     <div class="columns">
       <div class="column hero-image">
         <div class="container">
@@ -48,14 +49,19 @@
       </div>
     </div>
   </section>
+  <!--  home section ends -->
+
+  <!-- platform-background section starts -->
+
   <section class="platform-background">
     <div class="container platform-section">
       <div class="columns">
         <div class="column">
-          <p class="platform-first has-padding-10 is-size-5 has-text-weight-semibold">WERDE SIE TEIL DER EXKLUSIVEN BEAUTY PLATTFORM
+          <p class="platform-first has-padding-10 is-size-5 has-text-weight-semibold">WERDE SIE TEIL DER EXKLUSIVEN
+            BEAUTY PLATTFORM
             VON DOUGLAS UND GEWINNEN SIE NE-UE
             KUNDEN! </p>
-          <hr class="has-margin-left-10"/>
+          <hr class="has-margin-left-10" />
         </div>
         <div class="column  has-padding-left-55">
           <article class="media">
@@ -136,6 +142,10 @@
       </div>
     </div>
   </section>
+
+  <!-- platform-background section ends -->
+
+  <!-- postal-code section starts -->
   <section class="postal-code">
     <form class="enter-postcode">
       <p>
@@ -149,12 +159,16 @@
 
     </form>
   </section>
+  <!-- postal-code section ends -->
+
+  <!-- contact-form section starts -->
+
   <section class="container contact-form-section">
     <div class="columns">
       <div class="column">
         <div class="win-customer">
           <h1>SIE WOLLEN DABEI SEIN UND NE-UE KUNDEN GEWINNEN? </h1>
-          <hr class="custom-hr"/>
+          <hr class="custom-hr" />
           <p class="is-size-7">Vereinbaren Sie ein kostenloses Beratungsgespräch.</p>
         </div>
         <div class="contact-form">
@@ -190,6 +204,11 @@
       </div>
     </div>
   </section>
+
+  <!-- contact-form section ends -->
+
+  <!-- time table section starts -->
+
   <section class="container time-table-section">
     <div class="time-section-heading has-margin-auto">
       <h1>SHORE + DOUGLAS</h1>
@@ -264,18 +283,25 @@
       </div>
     </div>
   </section>
+  <!-- time table section ends -->
+
+  <!-- footer section starts -->
+
   <section class="footer-douglas-section has-margin-top-55">
     <div class="footer-douglas">
       <div class="container">
         <a href="#">AGB und Widerrufsbelehrung</a>
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
-        <a href="#" class="is-pulled-right"><img src="../images/logo_douglas_black.svg"/></a>
+        <a href="#" class="is-pulled-right"><img src="../images/logo_douglas_black.svg" /></a>
       </div>
     </div>
   </section>
 
+  <!-- footer section ends -->
 
+
+  <!-- Modal if postal code is found -->
 
   <div id="modal-positive" class="modal">
     <div class="modal-background"></div>
@@ -307,6 +333,8 @@
       </section>
     </div>
   </div>
+
+  <!-- Modal if postal code is not found -->
 
   <div id="modal-negative" class="modal">
     <div class="modal-background"></div>
